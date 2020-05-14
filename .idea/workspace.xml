@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e63e25e-1ecc-4847-8f8c-598d1c553564" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructure_Algorithm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/Graph$EdgeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/Graph$PathInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/Graph$WeightManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/GraphTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/GraphTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/ListGraph$Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/ListGraph$Vertex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Graph/ListGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/AbstractHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/BinaryHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/Heap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/HeapTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/HeapTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Heap/HeapTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/AbstractList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/ArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/CycleLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/CycleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/DoublyCycleLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/DoublyCycleLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/DoublyLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/DoublyLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/LinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/List/ListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/HashMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/HashMap$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/HashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/LinkedHashMap$LinkedNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/LinkedHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/Map$Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/Map.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/MapTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/MapTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/MapTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/MapTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/TreeMap$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/TreeMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/model/Key.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/model/SubKey1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Map/model/SubKey2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Queue/CycleDeque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Queue/CycleQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Queue/Deque.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Queue/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Queue/QueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/ListSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/Set$Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/Set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/SetTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/SetTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/SetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/TreeSet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Set/TreeSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Stack/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Stack/StackTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/AVLTree$AVLNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/AVLTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/BBSTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/BSTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/BinaryTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/BinaryTree$Visitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/RBTree$RBNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/RBTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/TreeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/BinaryTreeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/BinaryTrees$PrintStyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/BinaryTrees.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/InorderPrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/LevelOrderPrinter$LevelInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/LevelOrderPrinter$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/LevelOrderPrinter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/Tree/printer/Strings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/GenericUnionFind$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/GenericUnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFindTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QU_R.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QU_R_PH.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QU_R_PS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/com/venus/UnionFind/UnionFind_QU_S.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DataStructure_Algorithm/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Graph/Data.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Graph/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Graph/GraphTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Graph/ListGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Heap/AbstractHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Heap/BinaryHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Heap/Heap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Heap/HeapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/AbstractList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/CycleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/DoublyCycleLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/DoublyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/List/ListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/HashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/LinkedHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/Map.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/MapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/TreeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/model/Key.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/model/SubKey1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Map/model/SubKey2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Queue/CycleDeque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Queue/CycleQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Queue/Deque.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Queue/QueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Set/ListSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Set/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Set/SetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Set/TreeSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Stack/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Stack/StackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/AVLTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/BBSTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/BSTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/RBTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/TreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/BinaryTreeInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/BinaryTrees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/InorderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/LevelOrderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/Tree/printer/Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/GenericUnionFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFindTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QF.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QU_R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QU_R_PH.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QU_R_PS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/venus/UnionFind/UnionFind_QU_S.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bLaldSt8HcXHJEUAVAmbqhLNbz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IdeaProjects\DataStructure_Algorithm\src\com\venus\Map\model" />
+      <recent name="F:\IdeaProjects\DataStructure_Algorithm\src\com\venus\Map" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\IdeaProjects\DataStructure_Algorithm\src\com\venus" />
+      <recent name="F:\IdeaProjects\DataStructure_Algorithm\src\com\venus\Tree" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GraphTest">
+    <configuration name="GraphTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.venus.Graph.GraphTest" />
+      <module name="DataStructure_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.venus.Graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.venus.Heap.HeapTest" />
+      <module name="DataStructure_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.venus.Heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.venus.Map.MapTest" />
+      <module name="DataStructure_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.venus.Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.venus.Set.SetTest" />
+      <module name="DataStructure_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.venus.Set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnionFindTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.venus.UnionFind.UnionFindTest" />
+      <module name="DataStructure_Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.venus.UnionFind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GraphTest" />
+        <item itemvalue="Application.HeapTest" />
+        <item itemvalue="Application.UnionFindTest" />
+        <item itemvalue="Application.MapTest" />
+        <item itemvalue="Application.SetTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e63e25e-1ecc-4847-8f8c-598d1c553564" name="Default Changelist" comment="" />
+      <created>1588413979716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588413979716</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588418466925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588418466925" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1589376725252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589376725252" />
+    <state x="792" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588650663948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="792" y="446" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588650663948" />
+    <state x="761" y="344" key="FileChooserDialogImpl" timestamp="1589450484473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="344" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589450484473" />
+    <state width="1385" height="276" key="GridCell.Tab.0.bottom" timestamp="1589450494882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1385" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589450494882" />
+    <state width="1385" height="276" key="GridCell.Tab.0.center" timestamp="1589450494882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1385" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589450494882" />
+    <state width="1385" height="276" key="GridCell.Tab.0.left" timestamp="1589450494882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1385" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589450494882" />
+    <state width="1385" height="276" key="GridCell.Tab.0.right" timestamp="1589450494882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1385" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589450494882" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1588511605811">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588511605811" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1588995632947">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1588995632947" />
+    <state x="269" y="240" key="run.anything.popup" timestamp="1588870070389">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="269" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588870070389" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1588859021013">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588859021013" />
+  </component>
+</project>
