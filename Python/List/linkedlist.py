@@ -1,4 +1,12 @@
 
+'''
+链表解题思路：
+1. 虚拟头结点
+2. 快慢指针
+3. 无法获得节点时，value覆盖
+4。 多指针
+5.  长短不同的链表，多个链表拼在一起
+'''
 
 class Node(object):
     def __init__(self, value, next):
@@ -24,9 +32,15 @@ class LinkedList(object):
         self.head = None
         self._size = 0
 
+    '''
+    添加一个值在链表尾部，复用插入节点在某个位置
+    '''
     def add_value(self, value):
         self.add_value_at(value, self._size)
 
+    '''
+    添加一个值在链表中，边界条件检测，区分插入位置，头部修改拼接头结点，其他位置获取插入节点前一个节点，修改节点参数，修改元素个数
+    '''
     def add_value_at(self, value, index):
         self.__range_check_for_add(index)
 
@@ -38,6 +52,9 @@ class LinkedList(object):
 
         self._size += 1
 
+    '''
+    移除链表中的一个值，边界条件检测，区分移除位置，头部修改头结点，其他位置获取插入节点前一个节点，修改节点参数，元素个数 -1
+    '''
     def remove_at_index(self, index):
         self.__range_check(index)
 
@@ -52,6 +69,10 @@ class LinkedList(object):
         self._size -= 1
         return value
 
+    '''
+    移除链表中的某个值，使用虚头结点，从虚头结点遍历，如果节点的下一个节点等于要删除的值，修改节点的next值，node不变，元素个数-1
+    否则继续遍历下一个节点，
+    '''
     def remove_value(self, value):
         if self.head is None:
             return
@@ -65,6 +86,9 @@ class LinkedList(object):
                 node = node.next
         self.head = dummy.next
 
+    '''
+    反转链表，3指针head，cur，next，head不动，head的next指向next的next，next指向cur，cur和next向后移动
+    '''
     def reverse(self):
         cur = self.head
         next = cur.next
@@ -75,6 +99,9 @@ class LinkedList(object):
             next = self.head.next
         self.head = cur
 
+    '''
+    获取链表的中间点索引和node，快慢指针，当快指针的next和next.next不空，快指针走2步，慢指针走一步
+    '''
     def get_middle(self):
         slow, fast = self.head, self.head
         index = 0
@@ -85,6 +112,9 @@ class LinkedList(object):
 
         return slow, index
 
+    '''
+    返回链表中等于value的所有节点
+    '''
     def value_at(self, value):
         node = self.head
         nodes = []
@@ -94,11 +124,17 @@ class LinkedList(object):
             node = node.next
         return nodes
 
+    '''
+    获取index的value
+    '''
     def get_value(self, index):
         self.__range_check(index)
         node = self.__get_node(index)
         return node.value
 
+    '''
+    修改index的value
+    '''
     def set_value(self, index, value):
         self.__range_check(index)
 
