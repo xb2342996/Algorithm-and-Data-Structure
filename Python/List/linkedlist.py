@@ -8,8 +8,8 @@ from List.list import List
 1. 虚拟头结点
 2. 快慢指针
 3. 无法获得节点时，value覆盖
-4。 多指针
-5.  长短不同的链表，多个链表拼在一起
+4。多指针
+5. 长短不同的链表，多个链表拼在一起
 '''
 
 class Node(object):
