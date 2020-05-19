@@ -26,6 +26,10 @@ class LinkedList(List):
             for i, n in enumerate(nums):
                 self.add_value(n)
 
+    def clear(self):
+        self.__head = None
+        self._size = 0
+
     '''
     添加一个值在链表中，边界条件检测，区分插入位置，头部修改拼接头结点，其他位置获取插入节点前一个节点，修改节点参数，修改元素个数
     '''
@@ -33,9 +37,9 @@ class LinkedList(List):
         self._range_check_for_add(index)
 
         if index == 0:
-            self.__head = Node(value, self.head)
+            self.__head = Node(value, self.__head)
         else:
-            node = self.__get_node(index - 1)
+            node = self._get_node(index - 1)
             node.next = Node(value, node.next)
 
         self._size += 1
@@ -48,9 +52,9 @@ class LinkedList(List):
 
         if index == 0:
             value = self.__head.value
-            self.head = self.head.next
+            self.__head = self.__head.next
         else:
-            node = self.__get_node(index - 1)
+            node = self._get_node(index - 1)
             value = node.next.value
             node.next = node.next.next
 
@@ -117,7 +121,7 @@ class LinkedList(List):
     '''
     def get_value(self, index):
         self._range_check(index)
-        node = self.__get_node(index)
+        node = self._get_node(index)
         return node.value
 
     '''
@@ -126,7 +130,7 @@ class LinkedList(List):
     def set_value(self, index, value):
         self._range_check(index)
 
-        node = self.__get_node(index)
+        node = self._get_node(index)
         old_value = node.value
         node.value = value
         return old_value
@@ -134,13 +138,27 @@ class LinkedList(List):
     def contains_value(self, value):
         return False if not self.value_at(value) else True
 
-    def __get_node(self, index):
+    def _get_node(self, index):
         node = self.__head
         for i in range(index):
             node = node.next
 
         return node
 
+    def __repr__(self):
+        s = 'LinkedList=['
+        node = self.__head
+
+        for i in range(1, self._size):
+            if i == 0:
+                s += str(node.value)
+            else:
+                s += ', {}'.format(node.value)
+            node = node.next
+
+        s += '], Size: {}'.format(self._size)
+
+        return s
 
 def test_func():
     nums1 = [3, 3, 1, 4, 5, 3, 3, 3, 3, 2, 6, 3, 3, 3, 3]
@@ -176,4 +194,4 @@ def test_func():
 
     print(list)
 
-test_func()
+# test_func()

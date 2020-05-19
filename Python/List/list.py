@@ -11,10 +11,8 @@ class List(object):
     def is_empty(self):
         return self._size == 0
 
-    def clear(self):
-        self.head = None
-        self._size = 0
-
+    def size(self):
+        return self._size
     '''
     添加一个值在链表尾部，复用插入节点在某个位置
     '''
@@ -53,13 +51,3 @@ class List(object):
         if index > self._size or index < 0:
             raise IndexError('Index is out of range, Index must be in [0, ' + str(self._size) + ']')
 
-    def __repr__(self):
-        s = 'LinkedList=['
-        node = self.head
-        s += str(node.value)
-        for i in range(1, self._size):
-            node = node.next
-            s += ', {}'.format(node.value)
-        s += '], Size: {}'.format(self._size)
-
-        return s
