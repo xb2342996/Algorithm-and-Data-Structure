@@ -12,9 +12,10 @@ class BinarySearchTree(BinaryTree):
     def add_value(self, value):
         self._check_value(value)
 
-        new_node = Node(value, None)
+        new_node = self.create_node(value, None)
         if self._root is None:
             self._root = new_node
+            self.after_add(new_node)
             return
 
         node = self._root
@@ -35,7 +36,12 @@ class BinarySearchTree(BinaryTree):
             parent.right = new_node
         new_node.parent = parent
 
+        self.after_add(new_node)
         self._size += 1
+
+    def after_add(self, node):
+        pass
+
 
     def remove_value(self, value):
         self._remove_node(self._get_node(value))
@@ -62,18 +68,24 @@ class BinarySearchTree(BinaryTree):
                 node.parent.right = child
             else:
                 self._root = child
+            self.after_remove(child)
         elif node.parent is None:
             self._root = None
+            self.after_remove(node)
         else:
             if node.is_left_child():
                 node.parent.left = None
             elif node.is_right_child():
                 node.parent.right = None
+            self.after_remove(node)
 
         self._size -= 1
 
+    def after_remove(self, node):
+        pass
 
-
+    def create_node(self, value, parent):
+        return Node(value, parent)
 
     def _get_node(self, value):
 
@@ -91,15 +103,15 @@ class BinarySearchTree(BinaryTree):
         if value is None:
             raise ValueError('node value cannot be None')
 
-nodes = [7, 4, 9, 2, 5, 8, 11, 3]
-tree = BinarySearchTree()
-for n in nodes:
-    tree.add_value(n)
-
-# print(tree.inorder_traversal('recursive'))
-# print(tree.preorder_traversal('recursive'))
-# print(tree.postorder_traversal('recursive'))
-# tree.reverse()
-tree.remove_value(7)
-tree.remove_value(9)
-tree.print()
+# nodes = [7, 4, 9, 2, 5, 8, 11, 3]
+# tree = BinarySearchTree()
+# for n in nodes:
+#     tree.add_value(n)
+#
+# # print(tree.inorder_traversal('recursive'))
+# # print(tree.preorder_traversal('recursive'))
+# # print(tree.postorder_traversal('recursive'))
+# # tree.reverse()
+# tree.remove_value(7)
+# tree.remove_value(9)
+# tree.print()
