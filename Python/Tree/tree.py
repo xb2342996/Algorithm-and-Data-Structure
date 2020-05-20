@@ -13,6 +13,15 @@ class Node(object):
     def is_leaf(self):
         return self.left is None and self.right is None
 
+    def is_left_child(self):
+        return self.parent and self.parent.left == self
+
+    def is_right_child(self):
+        return self.parent and self.parent.right == self
+
+    def has_two_children(self):
+        return self.left and self.right
+
 class BinaryTree(object):
     def __init__(self):
         self._root = None

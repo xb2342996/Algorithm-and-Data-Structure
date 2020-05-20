@@ -79,7 +79,7 @@ public class BinaryTree<E> implements BinaryTreeInfo{
             return current;
         }
 
-        while (node.parent != null && node.parent.left != null){
+        while (node.parent != null && node.parent.left == node){
             node = node.parent;
         }
         return node.parent;
@@ -95,7 +95,7 @@ public class BinaryTree<E> implements BinaryTreeInfo{
             }
             return current;
         }
-        while (node.parent != null && node.parent.right != null) {
+        while (node.parent != null && node.parent.right == node) {
             node = node.parent;
         }
         return node.parent;
