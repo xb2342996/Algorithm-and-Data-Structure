@@ -137,14 +137,17 @@ class AVLTree(BalancedBinarySearchTree):
             else:
                 self.rotate_left(grand)
 
+    def after_rotate(self, grand, parent, child):
+        super().after_rotate(grand, parent, child)
+        self.update_height(grand)
+        self.update_height(parent)
 
-
-nodes = [67, 81, 77, 60, 11, 87, 89, 84, 69]
-tree = AVLTree()
-for n in nodes:
-    tree.add_value(n)
-
-tree.remove_value(11)
-tree.remove_value(60)
-tree.remove_value(67)
-tree.print()
+# nodes = [67, 81, 77, 60, 11, 87, 89, 84, 69]
+# tree = AVLTree()
+# for n in nodes:
+#     tree.add_value(n)
+#
+# tree.remove_value(11)
+# tree.remove_value(60)
+# tree.remove_value(67)
+# tree.print()

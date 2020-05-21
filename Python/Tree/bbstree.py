@@ -1,3 +1,6 @@
+## written by xiongbiao
+## date 2020-5-20
+
 from Tree.bstree import BinarySearchTree
 
 class BalancedBinarySearchTree(BinarySearchTree):
@@ -9,9 +12,11 @@ class BalancedBinarySearchTree(BinarySearchTree):
               更新grand和parent节点的高度
                   g                      p 
                 /   \                  /   \
-               p     m      --->      n     g
-             /  \                          / \
-            n    c                        c   m
+               p    t3      --->      n     g
+             /  \                    / \   / \
+            n    t2                 t0 t1 t2 t3
+           / \
+          t0  t1
           g为不平衡的节点，g左子树高度 - g右子树高度 > 1
         '''
 
@@ -50,5 +55,3 @@ class BalancedBinarySearchTree(BinarySearchTree):
             child.parent = grand
         grand.parent = parent
 
-        self.update_height(grand)
-        self.update_height(parent)

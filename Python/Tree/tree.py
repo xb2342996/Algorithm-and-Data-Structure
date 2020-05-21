@@ -22,6 +22,13 @@ class Node(object):
     def has_two_children(self):
         return self.left and self.right
 
+    def sibling(self):
+        if self.is_left_child():
+            return self.parent.right
+        if self.is_right_child():
+            return self.parent.left
+        return None
+
 class BinaryTree(object):
     def __init__(self):
         self._root = None
@@ -216,7 +223,7 @@ class BinaryTree(object):
         while not queue.is_empty() and level < self.height():
 
             node = queue.dequeue()
-            level_list.append(node.value)
+            level_list.append(node)
             count -= 1
 
             if node.left:
@@ -234,12 +241,15 @@ class BinaryTree(object):
                 level_list = []
                 level += 1
 
+        self.show(levels)
+
+    def show(self, levels):
         for key, value in levels.items():
 
             for v in value:
                 if v is None:
                     print('N', end=' ')
                 else:
-                    print(v, end=' ')
+                    print(v.value, end=' ')
             print()
 

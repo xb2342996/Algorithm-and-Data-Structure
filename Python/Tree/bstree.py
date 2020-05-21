@@ -10,8 +10,8 @@ class BinarySearchTree(BinaryTree):
 
 
     def add_value(self, value):
-        self._check_value(value)
 
+        self._check_value(value)
         new_node = self.create_node(value, None)
         if self._root is None:
             self._root = new_node
@@ -29,7 +29,6 @@ class BinarySearchTree(BinaryTree):
             else:
                 node.value = value
                 return
-
         if parent.value > value:
             parent.left = new_node
         else:
