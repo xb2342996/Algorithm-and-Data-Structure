@@ -213,6 +213,10 @@ class BinaryTree(object):
             node = node.parent
         return node.parent
 
+    def _check_value(self, value):
+        if value is None:
+            raise ValueError('node value cannot be None')
+
     def print(self):
         levels = {}
         queue = Queue()

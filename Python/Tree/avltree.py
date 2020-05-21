@@ -1,7 +1,7 @@
 ## written by xiongbiao
 ## date 2020-5-20
 
-from Tree.tree import Node
+from Tree.btree import Node
 from Tree.bbstree import BalancedBinarySearchTree
 
 class AVLNode(Node):

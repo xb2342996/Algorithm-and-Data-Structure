@@ -1,7 +1,7 @@
 ## written by xiongbiao
 ## date 2020-5-19
 
-from Tree.tree import BinaryTree, Node
+from Tree.btree import BinaryTree, Node
 
 class BinarySearchTree(BinaryTree):
 
@@ -43,9 +43,9 @@ class BinarySearchTree(BinaryTree):
 
 
     def remove_value(self, value):
-        self._remove_node(self._get_node(value))
+        self.__remove_node(self._get_node(value))
 
-    def _remove_node(self, node):
+    def __remove_node(self, node):
         if node is None:
             return None
 
@@ -98,9 +98,9 @@ class BinarySearchTree(BinaryTree):
                 return node
         return None
 
-    def _check_value(self, value):
-        if value is None:
-            raise ValueError('node value cannot be None')
+
+    def contains(self, value):
+        return self._get_node(value) is not None
 
 # nodes = [7, 4, 9, 2, 5, 8, 11, 3]
 # tree = BinarySearchTree()

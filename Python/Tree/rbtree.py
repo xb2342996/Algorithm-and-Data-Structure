@@ -169,14 +169,15 @@ class RedBlackTree(BalancedBinarySearchTree):
                     print('{}({})'.format(v.value, v.color), end=' ')
             print()
 
-nodes = [70, 84, 71, 56, 79, 72, 42]
-tree = RedBlackTree()
-for n in nodes:
-    tree.add_value(n)
+def test_func():
+    nodes = [70, 84, 71, 56, 79, 72, 42]
+    tree = RedBlackTree()
+    for n in nodes:
+        tree.add_value(n)
 
-tree.remove_value(42)
-tree.remove_value(56)
-tree.remove_value(70)
-tree.remove_value(84)
-tree.print()
-print('--------------------')
+    tree.remove_value(42)
+    tree.remove_value(56)
+    tree.remove_value(70)
+    tree.remove_value(84)
+    tree.print()
+    print('--------------------')

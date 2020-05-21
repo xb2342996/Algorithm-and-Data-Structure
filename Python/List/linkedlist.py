@@ -66,7 +66,7 @@ class LinkedList(List):
     否则继续遍历下一个节点，
     '''
     def remove_value(self, value):
-        if self.head is None:
+        if self.__head is None:
             return
         dummy = Node(0, self.__head)
         node = dummy
@@ -85,7 +85,7 @@ class LinkedList(List):
         cur = self.__head
         next = cur.next
         while next:
-            self.head.next = next.next
+            self.__head.next = next.next
             next.next = cur
             cur = next
             next = self.__head.next
@@ -137,6 +137,14 @@ class LinkedList(List):
 
     def contains_value(self, value):
         return False if not self.value_at(value) else True
+
+    def index_of(self, value):
+        node = self.__head
+        for i in range(self._size):
+            if value == node.value:
+                return i
+            node = node.next
+        return -1
 
     def _get_node(self, index):
         node = self.__head
