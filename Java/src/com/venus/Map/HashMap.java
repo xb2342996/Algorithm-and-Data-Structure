@@ -284,12 +284,12 @@ public class HashMap<K, V> implements Map<K, V> {
             node.hash = s.hash;
             node = s;
         }
-        int index = index(node);
+        Node<K, V> root = table[index(node)];
         Node<K, V> replace = node.left != null ? node.left : node.right;
         if (replace != null) {
             replace.parent = node.parent;
             if (node.parent == null) {
-                table[index] = replace;
+                root = replace;
             } else if (node == node.parent.left) {
                 node.parent.left = replace;
             } else {
@@ -297,7 +297,7 @@ public class HashMap<K, V> implements Map<K, V> {
             }
             fixAfterRemove(replace);
         }else if (node.parent == null){
-            table[index] = null;
+            root = null;
             fixAfterRemove(node);
         } else {
             if (node.parent.left == node) {
