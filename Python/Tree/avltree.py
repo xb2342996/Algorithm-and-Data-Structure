@@ -1,10 +1,7 @@
 ## written by xiongbiao
 ## date 2020-5-20
 
-
 from Tree.bbstree import BalancedBinarySearchTree
-
-
 
 
 class AVLTree(BalancedBinarySearchTree):

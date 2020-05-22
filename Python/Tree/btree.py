@@ -3,9 +3,9 @@
 
 from Queue.queue import Queue
 
-
-
 class BinaryTree(object):
+
+
     class Node(object):
         def __init__(self, value=None, parent=None):
             self.left = None
