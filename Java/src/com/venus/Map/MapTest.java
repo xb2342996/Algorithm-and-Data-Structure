@@ -17,17 +17,17 @@ public class MapTest {
 
         LinkedHashMap<Object, Integer> map = new LinkedHashMap<>();
 
-//        test2(map);
+        test2(map);
 //        test3(map);
-        test4(map);
-
-        map.travesal(new HashMap.Visitor<Object, Integer>() {
-            @Override
-            public boolean visit(Object key, Integer value) {
-                System.out.println(key +": " + value);
-                return false;
-            }
-        });
+//        test4(map);
+//
+//        map.travesal(new HashMap.Visitor<Object, Integer>() {
+//            @Override
+//            public boolean visit(Object key, Integer value) {
+//                System.out.println(key +": " + value);
+//                return false;
+//            }
+//        });
 //        test5(map);
     }
 

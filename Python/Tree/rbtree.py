@@ -2,19 +2,22 @@
 ## date 2020-5-20
 
 from Tree.bbstree import BalancedBinarySearchTree
-from Tree.bstree import Node
 from enum import Enum
 
-class Color(Enum):
-    RED = 1
-    BLACK = 2
 
-class RBNode(Node):
-    def __init__(self, value, parent):
-        super().__init__(value, parent)
-        self.color = Color.RED
 
 class RedBlackTree(BalancedBinarySearchTree):
+
+    class Color(Enum):
+        RED = 1
+        BLACK = 2
+
+    class RBNode(BalancedBinarySearchTree.Node):
+        def __init__(self, value, parent):
+            super().__init__(value, parent)
+            self.color = RedBlackTree.Color.RED
+
+
     def __init__(self):
         super().__init__()
 
@@ -131,7 +134,7 @@ class RedBlackTree(BalancedBinarySearchTree):
 
 
     def create_node(self, value, parent):
-        return RBNode(value, parent)
+        return RedBlackTree.RBNode(value, parent)
 
     '''
     颜色函数，判断颜色以及节点染色
@@ -143,21 +146,21 @@ class RedBlackTree(BalancedBinarySearchTree):
         return node
 
     def black(self, node):
-        return self.color(node, Color.BLACK)
+        return self.color(node, RedBlackTree.Color.BLACK)
 
     def red(self, node):
-        return self.color(node, Color.RED)
+        return self.color(node, RedBlackTree.Color.RED)
 
     def color_of(self, node):
         if node:
             return node.color
-        return Color.BLACK
+        return RedBlackTree.Color.BLACK
 
     def is_black(self, node):
-        return self.color_of(node) is Color.BLACK
+        return self.color_of(node) is RedBlackTree.Color.BLACK
 
     def is_red(self, node):
-        return self.color_of(node) is Color.RED
+        return self.color_of(node) is RedBlackTree.Color.RED
 
     def show(self, levels):
         for key, value in levels.items():

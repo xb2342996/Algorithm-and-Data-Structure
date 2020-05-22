@@ -1,7 +1,7 @@
 ## written by xiongbiao
 ## date 2020-5-19
 
-from Tree.btree import BinaryTree, Node
+from Tree.btree import BinaryTree
 
 class BinarySearchTree(BinaryTree):
 
@@ -84,7 +84,7 @@ class BinarySearchTree(BinaryTree):
         pass
 
     def create_node(self, value, parent):
-        return Node(value, parent)
+        return BinaryTree.Node(value, parent)
 
     def _get_node(self, value):
 

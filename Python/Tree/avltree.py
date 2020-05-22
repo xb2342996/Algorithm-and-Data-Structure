@@ -1,80 +1,84 @@
 ## written by xiongbiao
 ## date 2020-5-20
 
-from Tree.btree import Node
+
 from Tree.bbstree import BalancedBinarySearchTree
 
-class AVLNode(Node):
-    def __init__(self, value, parent):
-        super().__init__(value, parent)
-        self._height = 1
 
-    '''
-    AVL树节点方法：更新节点的高度，用于平衡后重新计算节点的高度
-    '''
-    def update_height(self):
-        if self.left:
-            left_height = self.left._height
-        else:
-            left_height = 0
-
-        if self.right:
-            right_height = self.right._height
-        else:
-            right_height = 0
-
-        self._height = 1 + max(left_height, right_height)
-
-
-    '''
-    AVL树节点方法：计算节点的平衡因子，计算当前节点的左右子树的高度差
-    '''
-    def balance_factor(self):
-        if self.left:
-            left_height = self.left._height
-        else:
-            left_height = 0
-
-        if self.right:
-            right_height = self.right._height
-        else:
-            right_height = 0
-        return left_height - right_height
-
-    '''
-    AVL树节点方法：获取左右子节点高度高的那棵子树，用于AVL树添加删除后旋转中提取不平衡的子树的节点，
-                 如果2个子树高度一样，返回同方向节点
-    '''
-    def taller_child(self):
-        if self.left:
-            left_height = self.left._height
-        else:
-            left_height = 0
-
-        if self.right:
-            right_height = self.right._height
-        else:
-            right_height = 0
-
-        if left_height > right_height:
-            return self.left
-        if left_height < right_height:
-            return self.right
-
-        if self.is_left_child():
-            return self.left
-        else:
-            return self.right
 
 
 class AVLTree(BalancedBinarySearchTree):
+    class AVLNode(BalancedBinarySearchTree.Node):
+        def __init__(self, value, parent):
+            super().__init__(value, parent)
+            self._height = 1
+
+        '''
+        AVL树节点方法：更新节点的高度，用于平衡后重新计算节点的高度
+        '''
+
+        def update_height(self):
+            if self.left:
+                left_height = self.left._height
+            else:
+                left_height = 0
+
+            if self.right:
+                right_height = self.right._height
+            else:
+                right_height = 0
+
+            self._height = 1 + max(left_height, right_height)
+
+        '''
+        AVL树节点方法：计算节点的平衡因子，计算当前节点的左右子树的高度差
+        '''
+
+        def balance_factor(self):
+            if self.left:
+                left_height = self.left._height
+            else:
+                left_height = 0
+
+            if self.right:
+                right_height = self.right._height
+            else:
+                right_height = 0
+            return left_height - right_height
+
+        '''
+        AVL树节点方法：获取左右子节点高度高的那棵子树，用于AVL树添加删除后旋转中提取不平衡的子树的节点，
+                     如果2个子树高度一样，返回同方向节点
+        '''
+
+        def taller_child(self):
+            if self.left:
+                left_height = self.left._height
+            else:
+                left_height = 0
+
+            if self.right:
+                right_height = self.right._height
+            else:
+                right_height = 0
+
+            if left_height > right_height:
+                return self.left
+            if left_height < right_height:
+                return self.right
+
+            if self.is_left_child():
+                return self.left
+            else:
+                return self.right
+
     def __init__(self):
         super().__init__()
     '''
     创建AVL节点
     '''
     def create_node(self, value, parent):
-        return AVLNode(value, parent)
+        return AVLTree.AVLNode(value, parent)
 
     '''
     添加节点后，顺着节点的父节点向上找，若节点平衡更新节点高度，找到第一个不平衡的节点，平衡该节点，结束

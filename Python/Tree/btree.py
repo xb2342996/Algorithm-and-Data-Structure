@@ -3,33 +3,35 @@
 
 from Queue.queue import Queue
 
-class Node(object):
-    def __init__(self, value=None, parent=None):
-        self.left = None
-        self.right = None
-        self.value = value
-        self.parent = parent
 
-    def is_leaf(self):
-        return self.left is None and self.right is None
-
-    def is_left_child(self):
-        return self.parent and self.parent.left == self
-
-    def is_right_child(self):
-        return self.parent and self.parent.right == self
-
-    def has_two_children(self):
-        return self.left and self.right
-
-    def sibling(self):
-        if self.is_left_child():
-            return self.parent.right
-        if self.is_right_child():
-            return self.parent.left
-        return None
 
 class BinaryTree(object):
+    class Node(object):
+        def __init__(self, value=None, parent=None):
+            self.left = None
+            self.right = None
+            self.value = value
+            self.parent = parent
+
+        def is_leaf(self):
+            return self.left is None and self.right is None
+
+        def is_left_child(self):
+            return self.parent and self.parent.left == self
+
+        def is_right_child(self):
+            return self.parent and self.parent.right == self
+
+        def has_two_children(self):
+            return self.left and self.right
+
+        def sibling(self):
+            if self.is_left_child():
+                return self.parent.right
+            if self.is_right_child():
+                return self.parent.left
+            return None
+
     def __init__(self):
         self._root = None
         self._size = 0
@@ -233,11 +235,11 @@ class BinaryTree(object):
             if node.left:
                 queue.enqueue(node.left)
             else:
-                queue.enqueue(Node())
+                queue.enqueue(BinaryTree.Node())
             if node.right:
                 queue.enqueue(node.right)
             else:
-                queue.enqueue(Node())
+                queue.enqueue(BinaryTree.Node())
 
             if count == 0:
                 count = queue.size()
