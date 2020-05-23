@@ -1,6 +1,5 @@
 package com.venus.UnionFind;
 
-import com.sun.corba.se.impl.resolver.SplitLocalResolverImpl;
 
 public abstract class UnionFind {
 
