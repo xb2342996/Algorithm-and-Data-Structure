@@ -1,7 +1,7 @@
 # Algorithm-and-Data-Structure
 ## 数据结构与算法
 * Java(完成)
-* Python（努力更新中...）
+* Python（完成（除Graph））
 
 ## 数据结构
 * 动态表（ArrayList）
@@ -39,3 +39,4 @@
   * 最短路径 —— Dijkstra
   * 最短路径 —— BellamFord
   * 多源最短路径 —— Floyd
+* 跳表（SkipList）
