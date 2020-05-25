@@ -24,7 +24,7 @@ class UnionFind():
         return NotImplemented
 
     def _range_check(self, index):
-        if index > len(self._parents) or v < 0:
+        if index > len(self._parents) or index < 0:
             raise IndexError('index is out of range')
 
 '''
@@ -35,6 +35,7 @@ class UnionFind_QF(UnionFind):
         super().__init__(capacity)
 
     def find(self, index):
+        self._range_check(index)
         return self._parents[index]
 
     def union(self, index_1, index_2):
@@ -52,6 +53,7 @@ class UnionFind_QU(UnionFind):
         super().__init__(capacity)
 
     def find(self, index):
+        self._range_check(index)
         while self._parents[index] != index:
             index = self._parents[index]
 
@@ -116,6 +118,7 @@ class UnionFind_PC(UnionFind_QU_rank):
         super().__init__(capacity)
 
     def find(self, index):
+        self._range_check(index)
         if self._parents[index] != index:
             self._parents[index] = self.find(self._parents[index])
 
@@ -129,6 +132,7 @@ class UnionFind_PS(UnionFind_QU_rank):
         super().__init__(capacity)
 
     def find(self, index):
+        self._range_check(index)
         while index != self._parents[index]:
             p = self._parents[index]
             self._parents[index] = self._parents[p]
@@ -143,6 +147,7 @@ class UnionFind_PH(UnionFind_QU_rank):
         super().__init__(capacity)
 
     def find(self, index):
+        self._range_check(index)
         while index != self._parents[index]:
             self._parents[index] = self._parents[self._parents[index]]
             index = self._parents[index]
@@ -153,13 +158,12 @@ class UnionFind_PH(UnionFind_QU_rank):
 
 def test_func_uf_ps():
     uf = UnionFind_PS(capacity=7)
-    uf.union(0, 1)
+    uf.union(1, 0)
     uf.union(1, 2)
     uf.union(2, 3)
     uf.union(3, 4)
     uf.union(4, 5)
     uf.union(5, 6)
-    # uf.union(6, 7)
     uf.show()
     print(uf.find(2))
 

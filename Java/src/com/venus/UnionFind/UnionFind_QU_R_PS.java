@@ -13,6 +13,6 @@ public class UnionFind_QU_R_PS extends UnionFind_QU_R{
             parents[v] = parents[parents[v]];
             v = p;
         }
-        return parents[v];
+        return v;
     }
 }
