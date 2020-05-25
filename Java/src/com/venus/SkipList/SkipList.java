@@ -44,11 +44,11 @@ public class SkipList<K, V> {
         }
     }
 
-    private int size() {
+    public int size() {
         return size;
     }
 
-    private boolean isEmpty() {
+    public boolean isEmpty() {
         return size == 0;
     }
 
