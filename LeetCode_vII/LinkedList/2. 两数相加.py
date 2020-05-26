@@ -9,6 +9,9 @@ from LinkedList.node import ListNode, make_linkedlist, show_linkedlist
 '''
 
 class Solution(object):
+    '''
+    创建一个虚拟头结点，按位遍历两个链表，如果其中一个有值另一个为空则另一个为0，相加处理进位值，循环解释后若进位值为1，在拼接一位
+    '''
     def addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode

@@ -13,6 +13,13 @@ class ListNode(object):
     def __eq__(self, other):
         return self.val == other.val
 
+class Node(object):
+    def __init__(self, val, prev, next, child):
+        self.val = val
+        self.prev = prev
+        self.next = next
+        self.child = child
+
 def make_linkedlist(lists):
     if lists is None or len(lists) == 0:
         return None
@@ -25,6 +32,10 @@ def make_linkedlist(lists):
     return head
 
 def show_linkedlist(head):
+    if head is None:
+        print(None)
+        return
+
     s = str(head.val)
     node = head.next
     while node:
