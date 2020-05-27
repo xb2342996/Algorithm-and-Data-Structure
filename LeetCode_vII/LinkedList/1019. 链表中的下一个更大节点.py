@@ -13,6 +13,7 @@ from LinkedList.node import ListNode, make_linkedlist, show_linkedlist
 class Solution(object):
     '''
     单调栈，维护一个索引栈一个元素栈
+    时间复杂度O（N）空间复杂度O（N）
     '''
     def nextLargerNodes(self, head):
         """
@@ -27,19 +28,12 @@ class Solution(object):
         while node:
             loc += 1
             ans.append(0)
-            print('ans', ans)
             while stack and stack[-1] < node.val:
                 ans[location[-1]] = node.val
-                print('ans', ans)
                 stack.pop()
                 location.pop()
-                print('stack',stack)
-                print('location',location)
             stack.append(node.val)
             location.append(loc)
-            print('stack',stack)
-            print('location',location)
-
             node = node.next
         return ans
 
