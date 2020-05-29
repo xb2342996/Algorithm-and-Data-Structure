@@ -23,7 +23,6 @@ class Solution(object):
             count, start = 0, 0
             for i in range(len(nums)):
                 while nums[i] - nums[start] > mid:
-                    print(nums[start], nums[i])
                     start += 1
                 count += i - start
 
