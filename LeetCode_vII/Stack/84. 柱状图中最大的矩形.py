@@ -21,7 +21,6 @@ class Solution(object):
         stack = []
         stack.append(-1)
         maxArea = 0
-
         for i in range(len(heights)):
             while stack[-1] != -1 and heights[i] <= heights[stack[-1]]:
                 index = stack.pop()
@@ -107,4 +106,4 @@ class Solution(object):
     #             maxArea = max(minHeight * (j - i + 1), maxArea)
     #     return maxArea
 
-print(Solution().largestRectangleArea([1,1,1,1,1,1,1,1,1,6,6]))
+print(Solution().largestRectangleArea([2,1,5,6,2,3]))
