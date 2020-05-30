@@ -30,7 +30,7 @@ class Solution(object):
                 w, n = stack.pop()
                 word = w + word * n
 
-        print(word)
+        return word
 
 
 Solution().decodeString('3[a2[c]]')
