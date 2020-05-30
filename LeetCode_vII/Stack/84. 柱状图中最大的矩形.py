@@ -6,7 +6,9 @@
 '''
 
 class Solution(object):
-
+    '''
+    单调栈
+    '''
     def largestRectangleArea(self, heights):
         """
         :type heights: List[int]
