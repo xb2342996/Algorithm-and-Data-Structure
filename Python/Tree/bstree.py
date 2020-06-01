@@ -61,12 +61,12 @@ class BinarySearchTree(BinaryTree):
 
         if child:
             child.parent = node.parent
-            if node.parent.left == node:
-                node.parent.left = child
-            elif node.parent.right == node:
-                node.parent.right = child
-            else:
+            if node.parent is None:
                 self._root = child
+            elif node.parent.left == node:
+                node.parent.left = child
+            else:
+                node.parent.right = child
             self.after_remove(child)
         elif node.parent is None:
             self._root = None
