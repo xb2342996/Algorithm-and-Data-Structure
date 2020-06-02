@@ -16,7 +16,7 @@ class Codec:
         :rtype: str
         """
         if not root:
-            return "None"
+            return None
 
         queue = []
         queue.append(root)

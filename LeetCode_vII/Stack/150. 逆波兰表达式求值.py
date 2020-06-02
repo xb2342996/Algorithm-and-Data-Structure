@@ -31,6 +31,6 @@ class Solution(object):
             print(stack)
         return stack[0]
 
-# print(Solution().evalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]))
+# print(Solution().evalRPN(["10", "6", "Total 9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]))
 import math
 print(math.ceil(6 / (-132)))
