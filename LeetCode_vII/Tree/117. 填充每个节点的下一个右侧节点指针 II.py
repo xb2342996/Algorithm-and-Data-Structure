@@ -26,9 +26,7 @@ class Solution(object):
         mostleft = root
         while mostleft:
             prev, cur = None, mostleft
-
             mostleft = None
-
             while cur:
                 prev, mostleft = self.processChild(cur.left, prev, mostleft)
                 prev, mostleft = self.processChild(cur.right, prev, mostleft)
