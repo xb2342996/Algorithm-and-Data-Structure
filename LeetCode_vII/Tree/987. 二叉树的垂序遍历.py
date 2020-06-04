@@ -15,16 +15,22 @@ class Solution(object):
         """
         from collections import defaultdict
         queue = []
+        ans = []
         queue.append((root, 0, 0))
-        verticals = defaultdict(list)
+        verticals = defaultdict(lambda: defaultdict(list))
         while queue:
             node, x, y = queue.pop(0)
             if node.left:
-                queue.append((node.left, x-1, y-1))
+                queue.append((node.left, x - 1, y + 1))
             if node.right:
-                queue.append((node.right, x+1, y-1))
+                queue.append((node.right, x + 1, y + 1))
 
-            verticals[x].append(node.val)
-        verticals.values()
-        verticals = sorted(verticals, key=lambda x: x[0])
+            verticals[x][y].append(node)
+
+        for k in sorted(verticals):
+            res = []
+            for v in sorted(verticals[k]):
+                res.extend(sorted(n.val for n in verticals[k][v]))
+            ans.append(res)
+        return ans
 
